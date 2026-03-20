@@ -15,7 +15,7 @@ use PhpAmqpLib\Message\AMQPMessage;
 // Connexion au serveur RabbitMQ
 $host = getenv('RABBITMQ_HOST') ?: 'rabbitmq';
 $port = (int) (getenv('RABBITMQ_PORT') ?: 5672);
-$connection = new AMQPStreamConnection($host, $port, 'guest', 'guest');
+$connection = new AMQPStreamConnection($host, $port, 'capteur-user', 'capteur123');
 $channel = $connection->channel();
 
 // Declaration du Topic Exchange "domotique"
