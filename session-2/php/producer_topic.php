@@ -20,7 +20,7 @@ $channel = $connection->channel();
 
 // Declaration du Topic Exchange "domotique"
 // Les parametres : nom, type, passive, durable, auto_delete
-$channel->exchange_declare('domotique', 'topic', false, true, false);
+//$channel->exchange_declare('domotique', 'topic', false, true, false);
 
 echo "[*] Producer demarre. Envoi de messages toutes les 3 secondes...\n";
 echo "[*] Appuyez sur Ctrl+C pour arreter.\n\n";
